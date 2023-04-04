@@ -31,7 +31,7 @@ enum wcd_cal_type {
 };
 struct wcdcal_ioctl_buffer {
   __u32 size;
-  __u8 __user * buffer;
+  __u8 __user *buffer;
   enum wcd_cal_type cal_type;
 };
 #define SNDRV_CTL_IOCTL_HWDEP_CAL_TYPE _IOW('U', 0x1, struct wcdcal_ioctl_buffer)
@@ -42,7 +42,7 @@ enum q6afe_cal_type {
 };
 struct q6afecal_ioctl_buffer {
   __u32 size;
-  __u8 __user * buffer;
+  __u8 __user *buffer;
   enum q6afe_cal_type cal_type;
 };
 #define SNDRV_IOCTL_HWDEP_VAD_CAL_TYPE _IOW('U', 0x1, struct q6afecal_ioctl_buffer)
